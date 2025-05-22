@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services - Rania's Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+       
+        <nav>
+                 <a href="{{ url_for('home') }}" >Home</a>
+<a href="{{ url_for('aboutus') }}">About Us</a>
+<a href="{{ url_for('membership') }}" >Membership</a>
+<a href="{{ url_for('services') }}"  class="active">Services</a>
+<a href="{{ url_for('gallery') }}" >Gallery</a>
+<a href="{{ url_for('contactus') }}" >Contactus</a>
+<a href="{{ url_for('login') }}" >Login  Here</a>
+<a href="{{ url_for('registration') }}">Registration</a>
+        </nav>
+
+ <h1>RANIA's Gym Services</h1>
+    <section class="services">
+        <div class="card">
+            <img src="{{ url_for('static', filename='trainer.jpg')}}" alt="Personal Training" />
+            <h3>Personal Training</h3>
+            <p>we provide personal training with expert coaches</p>
+        </div>
+        <div class="card">
+              <img src="{{ url_for('static', filename='group.jpg')}}"/>
+            <h3>Group Classes</h3>
+            <p>From yoga to zumba we provide proper group classes </p>
+        </div>
+        <div class="card">
+ <img src="{{ url_for('static', filename='nut.jpg')}}" />
+            <h3>Nutrition Guidance</h3>
+            <p>we provide proper diet plans .</p>
+        </div>
+        <div class="card">
+       <img src="{{ url_for('static', filename='suana.jpg')}}"     alt="suana plans">
+            <h3>Steam & Sauna</h3>
+            <p>we provide service of suana proper and steam</p>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='cardio.jpg')}}"   alt="Cardio Zone" />
+            <h3>Cardio Zone</h3>
+            <p>we have new equipments for cardio and training</p>
+        </div>
+        <div class="card">
+      <img src="{{ url_for('static', filename='str.jpg')}}"  alt="Strength Training" />
+            <h3>Strength Training</h3>
+            <p>Build power and muscle wwith wehigts and machines </p>
+        </div>
+        <div class="card">
+       <img src="{{ url_for('static', filename='home.jpg')}}"  alt="Strength Training" />
+            <h3>WEll environmentt</h3>
+            <p> traing in a clean and a friendly environment </p>
+        </div>
+         <div class="card">
+            <img src="{{ url_for('static', filename='hmemvership.jpg')}}"  alt="Strength Training" />
+            <h3>PERFECT PLANS</h3>
+            <p> A BASIC AND AFFORDABLE PLANS  </p>
+        </div>
+    </section>
+
+   <footer>
+    <p style="color: white;">&copy; 2025 RANIA's Gym. All rights reserved.</p>
+    <p style="color: white;">Contact us: info@raniagym.com |+92 3704508933</p>
+    <p style="color: white;">Follow us on:
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.instagram.com/#">Instagram</a> |
+        <a href="https://x.com/">Twitter</a>
+    </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rania's  gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+</head>
+
+<body>
+
+  <nav>
+           <a href="{{ url_for('home') }}" class="active">Home</a>
+<a href="{{ url_for('aboutus') }}">About Us</a>
+<a href="{{ url_for('membership') }}">Membership</a>
+<a href="{{ url_for('services') }}">Services</a>
+<a href="{{ url_for('gallery') }}">Gallery</a>
+<a href="{{ url_for('contactus') }}">Contactus</a>
+<a href="{{ url_for('login') }}">Login Here</a>
+<a href="{{ url_for('registration') }}">Registration</a>
+        </nav>
+    <h1>Welcome to RANIA"S Gym</h1>
+
+  <img src="{{ url_for('static', filename='home.jpg')}}" alt="Gym Image"  width="500px" height="500px"/>
+
+        <p>
+        At Rania's Gym, we believe in building not just bodies, but stronger and more confident lives.
+        Our state-of-the-art facility offers a wide range of modern fitness equipment, personalized training programs, 
+        group workout classes, and nutrition guidance tailored to your fitness goals. Whether you're a beginner or a seasoned athlete, 
+        our professional trainers are here to guide and support you every step of the way. Join AR Gym today and transform your strength, stamina, and spirit.
+    </p>
+   <footer>
+    <p style="color: white;">&copy; 2025 Ranias Gym. All rights reserved.</p>
+    <p style="color: white;">Contact us: info@raniagym.com | +9+92 3704508933</p>
+    <p style="color: white;">Follow us on:
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.instagram.com/#">Instagram</a> |
+        <a href="https://x.com/">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
+</html>

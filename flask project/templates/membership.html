@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Membership - Rania's Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"/>
+</head>
+<body>
+  <nav>
+         
+                    <a href="{{ url_for('home') }}" >Home</a>
+<a href="{{ url_for('aboutus') }}">About Us</a>
+<a href="{{ url_for('membership') }}" class="active">Membership</a>
+<a href="{{ url_for('services') }}">Services</a>
+<a href="{{ url_for('gallery') }}" >Gallery</a>
+<a href="{{ url_for('contactus') }}" >Contactus</a>
+<a href="{{ url_for('login') }}" >Login Here</a>
+<a href="{{ url_for('registration') }}">Registration</a>
+                    
+        </nav>
+    <h1>Membership Plans</h1>
+
+  <img src="{{ url_for('static', filename='membership.jpg')}}" alt="Gym Image" />
+
+    <p>
+        At Rania's Gym, we offer flexible membership options to suit your lifestyle and fitness goals. Whether you're looking for a short-term commitment or a long-term fitness journey, we have the perfect plan for you.
+        <br /><br />
+        <strong>Monthly Plan:</strong> Ideal for beginners and short-term visitors. Full access to gym equipment, group classes, and personal training sessions available at extra cost.
+        <br /><br />
+        <strong>Quarterly Plan:</strong> Best for regular gym-goers. Includes full access, 2 free personal training sessions per month, and free access to group fitness classes.
+        <br /><br />
+        <strong>Annual Plan:</strong> Our best value! Includes everything in the quarterly plan plus free nutrition consultations, priority access to new programs, and exclusive gym merchandise.
+        <br /><br />
+        Join today and become a part of our growing fitness community!
+    </p>
+   <footer>
+    <p style="color: white;">&copy; 2025 Rania's Gym. All rights reserved.</p>
+    <p style="color: white;">Contact us: info@raniagym.com | +92 3704508933</p>
+    <p style="color: white;">Follow us on:
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.instagram.com/#">Instagram</a> |
+        <a href="https://x.com/">Twitter</a>
+    </p>
+</footer>
+   
+</body>
+</html>
